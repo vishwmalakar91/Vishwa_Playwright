@@ -5,7 +5,7 @@ jobs:
   test-java:
     docker:
       - image: mcr.microsoft.com/playwright/java:v1.45.0-jammy
-      - image: cimg/openjdk:17.0
+      #- image: cimg/openjdk:17.0
     steps:
       - checkout
       - run:
@@ -17,8 +17,8 @@ jobs:
           key: cache-{{ checksum "/tmp/CIRCLECI_CACHE_KEY" }}
       - run:
           command: mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install-deps" && mvn verify
-      - store_test_results:
-          path: target/surefire-reports
+#      - store_test_results:
+ #         path: target/surefire-reports
       - save_cache:
           key: cache-{{ checksum "/tmp/CIRCLECI_CACHE_KEY" }}
           paths:

@@ -4,6 +4,7 @@ version: 2.1
 jobs:
   test-java:
     docker:
+      - image: mcr.microsoft.com/playwright/java:v1.45.0-jammy
       - image: cimg/openjdk:17.0
     steps:
       - checkout

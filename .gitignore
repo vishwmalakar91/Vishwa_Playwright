@@ -13,6 +13,9 @@ target/
 *.iml
 *.ipr
 
+### Reports and outputs ###
+/outputs/*
+
 ### Eclipse ###
 .apt_generated
 .classpath

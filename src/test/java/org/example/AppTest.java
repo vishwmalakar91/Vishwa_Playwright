@@ -9,5 +9,6 @@ public class AppTest {
     @Test
     public void test() {
         App.testPlaywright();
+        CareerTest.career();
     }
 }

@@ -11,6 +11,7 @@ public class AppTest {
         //App.testPlaywright();
         //CareerTest.career();
         //BrowserContextTest.testContext();
-        TableScraping.scrapTable();
+//        TableScraping.scrapTable();
+        BPInterview.mytest();
     }
 }

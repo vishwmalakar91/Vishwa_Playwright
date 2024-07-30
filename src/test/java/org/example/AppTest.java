@@ -8,7 +8,9 @@ import org.testng.annotations.*;
 public class AppTest {
     @Test
     public void test() {
-        App.testPlaywright();
-        CareerTest.career();
+        //App.testPlaywright();
+        //CareerTest.career();
+        //BrowserContextTest.testContext();
+        TableScraping.scrapTable();
     }
 }

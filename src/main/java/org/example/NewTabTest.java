@@ -7,7 +7,7 @@ public class NewTabTest {
 
     public static void tabTest() {
         try (Playwright playwright = Playwright.create()) {
-            Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+            Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(true));
             BrowserContext br = browser.newContext();
             Page page1 = br.newPage();
             page1.navigate("https://www.orangehrm.com/");
